@@ -3,11 +3,11 @@ LayoutOfRelativity
 
 Easily turn this...
 
-![The before](http://i.imgur.com/hwIXE.png)
+![The before](http://i.imgur.com/YooX9.png)
 
 Into this...
 
-![The after](http://i.imgur.com/Kap7u.png)
+![The after](http://i.imgur.com/cOLsO.png)
 
 ### Example usage
 	[RelativityLaws labelFitHeight:_lblOne];
