@@ -1,6 +1,14 @@
 LayoutOfRelativity
 ==========
 
+Easily turn this...
+
+[Imgur](http://i.imgur.com/hwIXE)
+
+Into this...
+
+[Imgur](http://i.imgur.com/Kap7u)
+
 ### Example usage
 	[RelativityLaws labelFitHeight:_lblOne];
 	[RelativityLaws labelFitHeight:_lblTwo];
