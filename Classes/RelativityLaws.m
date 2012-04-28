@@ -20,7 +20,7 @@
 
 + (void)alignView:(UIView*)view below:(UIView*)otherView withMargin:(NSInteger)margin {
     
-    CGRect newViewFrame = CGRectMake(otherView.frame.origin.x, otherView.frame.origin.y + otherView.frame.size.height + margin, view.frame.size.width, view.frame.size.height);
+    CGRect newViewFrame = CGRectMake(view.frame.origin.x, otherView.frame.origin.y + otherView.frame.size.height + margin, view.frame.size.width, view.frame.size.height);
     
     [view setFrame:newViewFrame];
 }
