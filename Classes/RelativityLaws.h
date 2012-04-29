@@ -14,6 +14,8 @@
 
 + (void)alignView:(UIView*)view below:(UIView*)otherView withMargin:(NSInteger)margin;
 
++ (void)alignViewTop:(UIView*)view below:(UIView*)otherView withMargin:(NSInteger)margin;
+
 + (void)alignParentBottom:(UIView*)view toView:(UIView*)otherView withPadding:(NSInteger)padding;
 
 @end

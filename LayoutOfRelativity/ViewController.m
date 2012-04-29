@@ -26,11 +26,23 @@
 	
     [_lblTwo setText:@"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."];
     
+    /*
+     * Moves _lblTwo to the bottom of _lblOne
+     */
     [RelativityLaws labelFitHeight:_lblOne];
     [RelativityLaws labelFitHeight:_lblTwo];
     
     [RelativityLaws alignView:_lblTwo below:_lblOne withMargin:10];
     [RelativityLaws alignParentBottom:_viewLblWrapper toView:_lblTwo withPadding:10];
+    
+    
+    /*
+     * Stretches top of _lblTwo to the bottom of _lblOne
+     */
+//    [RelativityLaws labelFitHeight:_lblOne];
+//    
+//    [RelativityLaws alignViewTop:_lblTwo below:_lblOne withMargin:10];
+//    [RelativityLaws alignParentBottom:_viewLblWrapper toView:_lblTwo withPadding:10];
     
 }
 

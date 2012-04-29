@@ -25,12 +25,20 @@
     [view setFrame:newViewFrame];
 }
 
++ (void)alignViewTop:(UIView*)view below:(UIView*)otherView withMargin:(NSInteger)margin {
+    
+    NSInteger height = (view.frame.origin.y + view.frame.size.height)- otherView.frame.size.height - margin;
+    
+    CGRect newViewFrame = CGRectMake(view.frame.origin.x, otherView.frame.origin.y + otherView.frame.size.height + margin, view.frame.size.width, height);
+    
+    [view setFrame:newViewFrame];
+}
+
 + (void)alignParentBottom:(UIView*)view toView:(UIView*)otherView withPadding:(NSInteger)padding {
     
     CGRect newViewFrame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, otherView.frame.origin.y + otherView.frame.size.height + padding);
     
     [view setFrame:newViewFrame];
-    
 }
 
 @end
