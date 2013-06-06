@@ -11,6 +11,8 @@ Into this...
 
 ### Example usage
 ```objc
+#import "UIView+RelativityLaws.h"
+
 // Fits label to height of text to but keeps initial width
 [_lblOne fitLabelHeight];
 [_lblTwo fitLabelHeight];

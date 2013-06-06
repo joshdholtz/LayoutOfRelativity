@@ -9,7 +9,6 @@
 #import "ViewController.h"
 
 #import "UIView+RelativityLaws.h"
-//#import "RelativityLaws.h"
 
 @interface ViewController ()
 
