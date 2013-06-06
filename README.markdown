@@ -10,8 +10,15 @@ Into this...
 ![The after](http://i.imgur.com/cOLsO.png)
 
 ### Example usage
-	[RelativityLaws labelFitHeight:_lblOne];
-	[RelativityLaws labelFitHeight:_lblTwo];
+```objc
+// Fits label to height of text to but keeps initial width
+[_lblOne fitLabelHeight];
+[_lblTwo fitLabelHeight];
 
-	[RelativityLaws alignView:_lblTwo below:_lblOne withMargin:10];
-	[RelativityLaws alignParentBottom:_viewLblWrapper toView:_lblTwo withPadding:10];
+// Moves _lblTwo to the bottom of _lblOne
+[_lblTwo alignBelow:_lblOne withSpacing:10];
+
+// Moves the bottom of _viewLblWrapper to bottom of _lblTwo
+[_viewLblWrapper alignToChildBottom:_lblTwo withSpacing:10];
+
+```

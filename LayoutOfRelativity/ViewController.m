@@ -27,16 +27,14 @@
 	
     [_lblTwo setText:@"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."];
     
-    /*
-     * Moves _lblTwo to the bottom of _lblOne
-     */
+    // Fits label to height of text to but keeps initial width
     [_lblOne fitLabelHeight];
     [_lblTwo fitLabelHeight];
-    
-    /*
-     * Moves the bottom of _viewLblWrapper to bottom of _lblTWo
-     */
+
+    // Moves _lblTwo to the bottom of _lblOne
     [_lblTwo alignBelow:_lblOne withSpacing:10];
+    
+    // Moves the bottom of _viewLblWrapper to bottom of _lblTwo
     [_viewLblWrapper alignToChildBottom:_lblTwo withSpacing:10];
     
 }
