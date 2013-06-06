@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032C2B24176123BF0046F2FE /* UIView+RelativityLaws.m in Sources */ = {isa = PBXBuildFile; fileRef = 032C2B23176123BF0046F2FE /* UIView+RelativityLaws.m */; };
 		03B57AD9154B805900982650 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B57AD8154B805900982650 /* UIKit.framework */; };
 		03B57ADB154B805A00982650 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B57ADA154B805900982650 /* Foundation.framework */; };
 		03B57ADD154B805A00982650 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B57ADC154B805A00982650 /* CoreGraphics.framework */; };
@@ -16,10 +17,11 @@
 		03B57AEC154B805A00982650 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B57AEA154B805A00982650 /* MainStoryboard_iPhone.storyboard */; };
 		03B57AEF154B805A00982650 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B57AED154B805A00982650 /* MainStoryboard_iPad.storyboard */; };
 		03B57AF2154B805A00982650 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B57AF1154B805A00982650 /* ViewController.m */; };
-		03B57AFB154B815000982650 /* RelativityLaws.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B57AFA154B815000982650 /* RelativityLaws.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		032C2B22176123BF0046F2FE /* UIView+RelativityLaws.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RelativityLaws.h"; sourceTree = "<group>"; };
+		032C2B23176123BF0046F2FE /* UIView+RelativityLaws.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RelativityLaws.m"; sourceTree = "<group>"; };
 		03B57AD4154B805900982650 /* LayoutOfRelativity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutOfRelativity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B57AD8154B805900982650 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03B57ADA154B805900982650 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,8 +36,6 @@
 		03B57AEE154B805A00982650 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		03B57AF0154B805A00982650 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		03B57AF1154B805A00982650 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		03B57AF9154B815000982650 /* RelativityLaws.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativityLaws.h; sourceTree = "<group>"; };
-		03B57AFA154B815000982650 /* RelativityLaws.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativityLaws.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 		03B57AF8154B810400982650 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				03B57AF9154B815000982650 /* RelativityLaws.h */,
-				03B57AFA154B815000982650 /* RelativityLaws.m */,
+				032C2B22176123BF0046F2FE /* UIView+RelativityLaws.h */,
+				032C2B23176123BF0046F2FE /* UIView+RelativityLaws.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 				03B57AE5154B805A00982650 /* main.m in Sources */,
 				03B57AE9154B805A00982650 /* AppDelegate.m in Sources */,
 				03B57AF2154B805A00982650 /* ViewController.m in Sources */,
-				03B57AFB154B815000982650 /* RelativityLaws.m in Sources */,
+				032C2B24176123BF0046F2FE /* UIView+RelativityLaws.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +302,7 @@
 				03B57AF7154B805A00982650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

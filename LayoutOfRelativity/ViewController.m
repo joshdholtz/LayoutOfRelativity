@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 
-#import "RelativityLaws.h"
+#import "UIView+RelativityLaws.h"
+//#import "RelativityLaws.h"
 
 @interface ViewController ()
 
@@ -29,20 +30,14 @@
     /*
      * Moves _lblTwo to the bottom of _lblOne
      */
-    [RelativityLaws labelFitHeight:_lblOne];
-    [RelativityLaws labelFitHeight:_lblTwo];
-    
-    [RelativityLaws alignView:_lblTwo below:_lblOne withMargin:10];
-    [RelativityLaws alignParentBottom:_viewLblWrapper toView:_lblTwo withPadding:10];
-    
+    [_lblOne fitLabelHeight];
+    [_lblTwo fitLabelHeight];
     
     /*
-     * Stretches top of _lblTwo to the bottom of _lblOne
+     * Moves the bottom of _viewLblWrapper to bottom of _lblTWo
      */
-//    [RelativityLaws labelFitHeight:_lblOne];
-//    
-//    [RelativityLaws alignViewTop:_lblTwo below:_lblOne withMargin:10];
-//    [RelativityLaws alignParentBottom:_viewLblWrapper toView:_lblTwo withPadding:10];
+    [_lblTwo alignBelow:_lblOne withSpacing:10];
+    [_viewLblWrapper alignToChildBottom:_lblTwo withSpacing:10];
     
 }
 
